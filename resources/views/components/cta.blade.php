@@ -1,0 +1,1 @@
+<section class="closing-cta"><div class="orbit orbit-cta" aria-hidden="true"></div><div class="container"><div><span class="eyebrow light">{{ __('site.cta_text') }}</span><h2>{{ __('site.cta_title') }}</h2></div><a class="button" href="{{ route('contact') }}">{{ __('site.contact') }} <span>{{ __('site.arrow') }}</span></a></div></section>

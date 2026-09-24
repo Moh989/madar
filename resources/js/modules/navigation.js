@@ -1,0 +1,11 @@
+const header=document.querySelector('[data-header]');
+const update=()=>header?.classList.toggle('scrolled',window.scrollY>30);
+update();window.addEventListener('scroll',update,{passive:true});
+const modal=document.querySelector('#mobile-menu');const opener=document.querySelector('[data-menu-open]');
+opener?.addEventListener('click',()=>{modal.showModal();opener.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';});
+document.querySelector('[data-menu-close]')?.addEventListener('click',()=>modal.close());
+modal?.addEventListener('close',()=>{opener.setAttribute('aria-expanded','false');document.body.style.overflow='';opener.focus();});
+modal?.addEventListener('click',e=>{if(e.target===modal){const r=modal.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right)modal.close();}});
+const dropdown=document.querySelector('.sector-dropdown');
+document.addEventListener('click',e=>{if(dropdown&&!dropdown.contains(e.target))dropdown.open=false;});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&dropdown?.open){dropdown.open=false;dropdown.querySelector('summary').focus();}});

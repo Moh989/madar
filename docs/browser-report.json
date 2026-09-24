@@ -1,0 +1,80 @@
+{
+  "viewports": [
+    {
+      "width": 360,
+      "pages": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "pages": 7,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "pages": 7,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "pages": 7,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "pages": 7,
+      "overflow": false
+    }
+  ],
+  "accessibility": [
+    {
+      "path": "/ar",
+      "violations": []
+    },
+    {
+      "path": "/en",
+      "violations": []
+    },
+    {
+      "path": "/ar/contact",
+      "violations": []
+    },
+    {
+      "path": "/ar/sectors/air-freight",
+      "violations": []
+    },
+    {
+      "path": "/ar/sectors",
+      "violations": []
+    },
+    {
+      "path": "/ar/about",
+      "violations": []
+    },
+    {
+      "path": "/ar/quote",
+      "violations": []
+    }
+  ],
+  "checks": [
+    "Four slides, image decoding, dots and keyboard arrows",
+    "Fixed navigation and scroll color change",
+    "Language switch retains detail route",
+    "Mobile dialog, keyboard focus and Escape return",
+    "Real HTTP CSRF rejection",
+    "Shipment form conditional fields and saved request confirmation",
+    "Admin login and MySQL inquiry follow-up",
+    "Image upload through admin browser UI",
+    "Admin content publication reflected in public page",
+    "Logout invalidates protected access",
+    "6-second autoplay, pause on focus, persistent pause",
+    "First slide, image and navigation available without JavaScript"
+  ],
+  "errors": [],
+  "passed": true,
+  "additionalChecks": [
+    "Synthetic touch swipe changes slide",
+    "Reduced-motion disables automatic playback"
+  ],
+  "qaDataRemoved": true
+}
